@@ -166,6 +166,16 @@ body {
     background-color: #777777;
 }
 
+.sidebar-item-top-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+.sidebar-item-top-link:hover {
+    color: #BEB7B7;
+}
+
 .sidebar-item-top-header {
     color: #fff;
     font-weight: bold;
@@ -209,8 +219,8 @@ body {
     margin: 26px 0 0 1px;
 }
 
-.content-item,
-.content-item-last {
+.content-item-cell,
+.content-item-cell-last {
     width: 133px;
     height: 152px;
     margin: 20px 22px 0 0;
@@ -218,7 +228,7 @@ body {
     float: left;
 }
 
-.content-item-last {
+.content-item-cell-last {
     margin: 20px 0 0 0;
 }
 
