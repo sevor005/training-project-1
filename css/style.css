@@ -179,6 +179,10 @@ a:hover {
     font-weight: bold;
 }
 
+.sidebar-menu-item {
+    margin: 1px;
+}
+
 /*Content*/
 .content {
     width: 755px;
@@ -193,12 +197,33 @@ a:hover {
     box-sizing: border-box;
 }
 
+.list-marker {
+    position: relative;
+    list-style: none;
+}
+
+.list-marker:before {
+    content: "";
+    width: 3px;
+    height: 3px;
+    background-color: #777777;
+    position: absolute;
+    top: 9px;
+    left: -9px;
+}
+
 .content-item-top-text {
     margin: 29px 0 0 38px;
     padding: 0;
     line-height: 1.5;
     color: #777777;
     list-style: square;
+}
+
+.text-gray-bold-header {
+    color: #777777;
+    font-weight: bold;
+    word-spacing: 1.3px;
 }
 
 .text-gray-bold {
