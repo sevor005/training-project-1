@@ -10,6 +10,11 @@ body {
     background: #fff;
 }
 
+p {
+    padding: 0;
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -25,7 +30,6 @@ a:hover {
     width: 960px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 20px 0 25px;
 }
 
 .layout {
@@ -35,14 +39,14 @@ a:hover {
 .layout:after {
     content: "";
     display: block;
-    height: 200px;
+    height: 248px;
 }
 
 /* Header */
 .header {
     height: 110px;
     border-bottom: 1px solid #696969;
-    padding-bottom: 17px;
+    padding: 20px 0 17px;
 }
 
 .header-item-left,
@@ -69,38 +73,20 @@ a:hover {
 }
 
 .header-item-right-text {
-    padding: 25px;
+    padding: 23px;
     float: right;
     text-align: right;
 }
 
-.header-item-text {
-    margin-bottom: 3px;
-    color: #fff;
-}
-
-.header-tel {
-    margin-bottom: 4px;
-}
-
-.header-email {
+.header-link:not(:last-child)  {
     margin-bottom: 6px;
-}
-
-.header-link-email,
-.header-link-site {
-    color: #fff;
-}
-
-.header-item-text:last-child {
-    margin-bottom: 0;
 }
 
 /* Footer */
 
 .footer {
     height: 180px;
-    margin-top: -175px;
+    margin-top: -224px;
     border-top: 1px solid #696969;
     padding-top: 23px;
     padding-bottom: 20px;
@@ -150,7 +136,7 @@ a:hover {
 
 /* Main */
 .main {
-    margin-top: 20px;
+    padding-top: 20px;
     position: relative;
 }
 
@@ -158,51 +144,71 @@ a:hover {
 .sidebar {
     width: 185px;
     float: left;
-    color: #fff;
     padding-bottom: 153px;
 }
 
-.sidebar-item-top {
-    padding: 21px 15px;
+.sidebar-menu {
+    padding: 16px 13px;
     box-sizing: border-box;
     line-height: 1.5;
     background-color: #777777;
     margin-bottom: 20px;
 }
 
-.sidebar-item-top:last-child {
-    margin-bottom: 0;
-}
-
-.sidebar-item-top-header {
+.sidebar-menu-header {
     color: #fff;
     font-weight: bold;
 }
 
 .sidebar-menu-item {
-    margin: 1px;
+    margin: 2px 0 0;
 }
 
 /*Content*/
 .content {
     width: 755px;
     float: right;
+    color: #777;
 }
 
-.content-item-top {
-    height: 210px;
+.content-block-list {
+    margin-left: -22px;
+}
+
+.content-block {
     background-color: #dcdcdc;
-    padding: 20px;
-    line-height: 1.2;
+    padding: 20px 20px 15px;
     box-sizing: border-box;
 }
 
-.list-marker {
+.content-block_small {
+    width: 133px;
+    height: 152px;
+    float: left;
+    margin-left: 22px;
+    margin-top: 20px;
+}
+
+.content-block_middle {
+    width: 366px;
+    height: 200px;
+    float: left;
+    margin-left: 22px; 
+    margin-top: 20px;
+}
+
+.content-list {
+    margin-left: 38px;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.content-list-item {
     position: relative;
     list-style: none;
 }
 
-.list-marker:before {
+.content-list-item:before {
     content: "";
     width: 3px;
     height: 3px;
@@ -212,66 +218,16 @@ a:hover {
     left: -9px;
 }
 
-.content-item-top-text {
-    margin: 29px 0 0 38px;
-    padding: 0;
+.paragraph {
     line-height: 1.5;
-    color: #777777;
-    list-style: square;
+    color: #777;
 }
 
-.text-gray-bold-header {
-    color: #777777;
-    font-weight: bold;
-    word-spacing: 1.3px;
+.paragraph + .paragraph {
+    margin-top: 26px;
 }
 
-.text-gray-bold {
-    color: #777777;
-    font-weight: bold;
-}
-
-.content-item-bottom-text {
-    color: #777777;
-    margin: 26px 0 0 1px;
-}
-
-.content-item-cell {
-    width: 133px;
-    height: 152px;
-    margin: 20px 22px 0 0;
-    background-color: #dcdcdc;
-    float: left;
-}
-
-.content-item-cell:last-child {
-    margin: 20px 0 0 0;
-}
-
-.content-item-bottom {
-    margin-top: 20px;
-}
-
-.content-item-bottom-center,
-.content-item-bottom-right {
-    width: 370px;
-    height: 200px;
-    padding: 18px;
-    box-sizing: border-box;
-    color: #777777;
-    line-height: 1.6;
-    background-color: #dcdcdc;
-}
-
-.content-item-bottom-center {
-    float: left;
-}
-
-.content-item-bottom-right {
-    float: right;
-}
-
-.content-item-bottom-left {
+.bottom-side-block {
     height: 133px;
     width: 185px;
     background-color: #777777;
@@ -285,6 +241,9 @@ a:hover {
 
 
 
+.bold {
+    font-weight: bold;
+}
 
 .clearfix::after {
     content: "";
