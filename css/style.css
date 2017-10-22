@@ -10,6 +10,11 @@ body {
     background: #fff;
 }
 
+ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
 p {
     padding: 0;
     margin: 0;
@@ -95,41 +100,39 @@ a:hover {
 .footer-item-left,
 .footer-item-center {
     width: 300px;
-    height: 180px;
+    height: 100%;
     margin-right: 25px;
     background-color: #696969;
     float: left;
 }
 
 .footer-item-left-text {
-    padding: 5px;
-    margin: 10px 83px 0 19px;
+    padding: 15px 88px 5px 24px;
     columns: auto 2;
     column-gap: 71px;
-    line-height: 1.71;
+    line-height: 1.6;
     color: #fff;
 }
 
-.footer-item-right {
+.footer-right {
     float: right;
 }
 
 .footer-item-center-text {
     padding: 3px 14px;
-    margin-left: 24px;
+    margin: 11px 0 0 24px;
     color: #fff;
     list-style: square;
     line-height: 1.6;
 }
 
-.footer-item-right-top,
-.footer-item-right-bottom {
+.footer-item-right {
     width: 310px;
     height: 75px;
     background-color: #696969;
 }
 
-.footer-item-right-bottom {
+.footer-item-right:last-child {
     margin-top: 30px;
 }
 
